@@ -18,12 +18,12 @@ build:
 requirements:
   host:
     - pip
-    - python >= 3.6
+    - python >=3.6
   run:
     - async-exit-stack ==1.0.1  # [py<37]
     - asyncssh ==2.7.0
     - fsspec ==2021.06.0
-    - python >= 3.6
+    - python >=3.6
 
 test:
   imports:
