@@ -1,5 +1,5 @@
 {% set name = "sshfs" %}
-{% set version = "2021.6.0a15" %}
+{% set version = "2021.7.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sshfs-{{ version }}.tar.gz
-  sha256: e01bf7b5ac47d1908e11e11ab89733ad4781fe45d6c414dd55dfcb8b9e7d9405
+  sha256: 434a12514f353dd8aa3096b629f3e132cdb083b8c6e3963f7b48b240b4c04a36
 
 build:
   number: 0
@@ -21,7 +21,7 @@ requirements:
   run:
     - async-exit-stack ==1.0.1  # [py<37]
     - asyncssh ==2.7.0
-    - fsspec ==2021.06.0
+    - fsspec ==2021.7.0
     - python
 
 test:
