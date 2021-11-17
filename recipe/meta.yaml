@@ -20,7 +20,7 @@ requirements:
     - python
   run:
     - async-exit-stack ==1.0.1  # [py<37]
-    - asyncssh >=2.7.0,<2.8
+    - asyncssh >=2.7.1,<2.8
     - fsspec >=2021.8.1
     - python
 
