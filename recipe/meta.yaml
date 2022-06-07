@@ -1,5 +1,5 @@
 {% set name = "sshfs" %}
-{% set version = "2022.3.1" %}
+{% set version = "2022.6.0" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sshfs-{{ version }}.tar.gz
-  sha256: fb75366767efbad8cb73275336ad7f27dd95210782c15898037be329f9864880
+  sha256: 700b78a6af6952b4333474bdb55729a0d1949acf0157a3cb6d7b50221166b26e
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
