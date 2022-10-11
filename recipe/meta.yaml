@@ -11,18 +11,18 @@ source:
   sha256: 700b78a6af6952b4333474bdb55729a0d1949acf0157a3cb6d7b50221166b26e
 
 build:
-  number: 0
+  number: 1
+  noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python
+    - python >=3.8
   run:
-    - async-exit-stack ==1.0.1  # [py<37]
     - asyncssh >=2.11.0,<3
     - fsspec >=2021.8.1
-    - python
+    - python >=3.8
 
 test:
   imports:
