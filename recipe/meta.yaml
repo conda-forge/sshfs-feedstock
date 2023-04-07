@@ -11,7 +11,7 @@ source:
   sha256: d4aba679144e5bc47491395b929c48450daa13738986b41959e1d3673addff7c
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -19,6 +19,7 @@ requirements:
   host:
     - pip
     - python >=3.8
+    - setuptools_scm >=6.3.1
   run:
     - asyncssh >=2.11.0,<3
     - fsspec >=2021.8.1
